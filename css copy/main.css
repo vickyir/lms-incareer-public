@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.custom--px{
+    margin-top: 90px;
+    padding: 5rem !important;
+    background-color: #fff;
+    height: 100%;
+}
+
+.gradient-background {
+    background: linear-gradient(207deg,#dcedaa,#f313a8,#1a3fd8,#e54f77,#a264fc,#f5e4e0);
+    background-size: 360% 360%;
+    animation: gradient-animation 12s ease infinite;
+  }
+  
+  
+  .input-group{
+      border: 1px solid #e9e9e9;
+      border-radius: 8px;
+      padding: .5rem;
+  }
+
+
+  .input-group label{
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 10px;
+      font-size: 1rem;
+      pointer-events: none;
+      transition: .3s ease-out;
+      color: #cccccc;
+  }
+
+  .box i{
+      margin-left: -2rem;
+      color: #cccccc;
+  }
+
+  .input-group input:focus + label,
+  .input-group input:valid + label{
+      transform: translateY(-19px);
+      font-size: .7rem;
+      color: #000;
+  }
+
+
+  .input-group input{
+      background-color: transparent;
+      border: none;
+      outline: none;
+      width: 100%;
+  }
+  
+  @media screen and (max-width: 1404px) {
+    .custom--px{
+        padding: 2rem !important;
+    }
+    
+}
+
+@media screen and (max-width: 677px) {
+    .custom--px{
+        padding: 7rem !important;
+    }
+
+    .form-group .check-group {
+        font-size: .6rem;
+    }
+
+    .form-group a{
+        font-size: .6rem;
+    }
+
+    .input-group label{
+        font-size: .7rem;
+    }
+
+    .input-group input{
+      font-size: .7rem;
+    }
+    
+}
+
+@media screen and (max-width: 601px) {
+    .custom--px{
+        padding: 1rem !important;
+    }
+
+    .form-group .check-group {
+        font-size: .6rem;
+    }
+
+    .form-group a{
+        font-size: .6rem;
+    }
+
+    .input-group label{
+        font-size: .7rem;
+    }
+
+    .input-group input{
+      font-size: .7rem;
+    }
+  
+    
+}
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
